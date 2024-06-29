@@ -1,8 +1,67 @@
+/* Подключение шрифта Rounded Mplus 1c Bold */
+
+@font-face {
+    src: url(/assets/styles/fonts/RoundedMplus1c/MPLUSRounded1c-Bold.ttf);
+    font-family: 'Rounded Mplus 1c Bold';
+    font-weight: bold;
+}
+
+@font-face {
+    src: url(/assets/styles/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+    font-family: 'Quicksand';
+}
+
 /* Общие стили */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: "Montserrat", sans-serif;
+    /*font-family: "Quicksand";*/
+    /* 'Arial' */
 }
+
+h2 {
+    font-family: "Rounded Mplus 1c Bold";
+}
+
+/* Стили для блока "Header" */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    /*min 30px max60px*/
+    gap: clamp(1.875rem, 0.536rem + 3.571vw, 3.75rem);
+    /*padding-top 50px, padding-left-right 20px, padding bottom 20px */
+    padding: 50px 20px 20px;
+    justify-content: center;
+    align-items: center;
+
+    /*min 13px max 16px */
+    font-size: clamp(0.813rem, 0.679rem + 0.357vw, 1rem);
+}
+
+.header__item {
+    color: black;
+    text-decoration: none;
+}
+
+.header__button {
+
+    font-weight: bold;
+    color: white;
+    background-color: #FCCD04;
+    border: 1px solid #FCCD04;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 15px 10px;
+    /*min 150px max 200px*/
+    width: clamp(9.375rem, 7.143rem + 5.952vw, 12.5rem);
+    transition: 0.3s;
+}
+
+.header__button:hover {
+    transform: scale(1.1);
+}
+
+/* Стили для блока "Header" */
 
 /* Стили для блока "Запросы" */
 .requests-container {
@@ -36,9 +95,12 @@ body {
     position: absolute;
     background-color: white;
     border: 2px solid #9b59b6;
-    border-radius: 50px; /* Увеличено значение для более округленных краев */
-    padding: 20px 40px; /* Увеличены отступы */
-    font-size: 16px; /* Увеличен размер шрифта */
+    border-radius: 50px;
+    /* Увеличено значение для более округленных краев */
+    padding: 20px 40px;
+    /* Увеличены отступы */
+    font-size: 16px;
+    /* Увеличен размер шрифта */
     color: #9b59b6;
     white-space: nowrap;
     transition: transform 0.3s;
@@ -103,12 +165,14 @@ body {
 }
 
 .faq-item {
-    border-top: 1px solid #9b59b6; /* Тонкая фиолетовая линия */
+    border-top: 1px solid #9b59b6;
+    /* Тонкая фиолетовая линия */
     padding: 15px 0;
 }
 
 .faq-item:first-child {
-    border-top: none; /* Убирает верхнюю линию у первого элемента */
+    border-top: none;
+    /* Убирает верхнюю линию у первого элемента */
 }
 
 .question {
@@ -136,12 +200,14 @@ body {
 }
 
 .faq-item:not(:last-child) {
-    border-bottom: 1px solid #9b59b6; /* Тонкая фиолетовая линия снизу */
+    border-bottom: 1px solid #9b59b6;
+    /* Тонкая фиолетовая линия снизу */
 }
 
 .faq-item:last-child {
     border-bottom: none;
 }
+
 /* Стили для футера */
 .footer-container {
     display: flex;
@@ -210,6 +276,10 @@ body {
     border-top: 1px solid #ccc;
     text-align: center;
     background-color: transparent;
+
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .navigation-container ul {
