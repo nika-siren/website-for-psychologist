@@ -75,7 +75,7 @@ header {
 
     border: 2px solid #9b59b6;
     border-radius: 50px;
-    margin: 20px 50px 20px;
+    margin: 20px 90px 20px;
     /*min30px max50px*/
     padding: clamp(1.875rem, 0.982rem + 2.381vw, 3.125rem);
 
