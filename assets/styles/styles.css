@@ -75,7 +75,7 @@ header {
 
     border: 2px solid #9b59b6;
     border-radius: 50px;
-    margin: 20px 50px 20px;
+    margin: 20px 90px 20px;
     /*min30px max50px*/
     padding: clamp(1.875rem, 0.982rem + 2.381vw, 3.125rem);
 
@@ -109,7 +109,7 @@ header {
     font-size: clamp(0.875rem, 0.071rem + 2.143vw, 2rem);
     text-transform: uppercase;
     color: #393D3E;
-    list-style-image: url(/assets/images/Star\ 1.png);
+    list-style-image: url(/assets/images/star-marker.png);
 }
 
 .about-specialist__list-items {
@@ -228,6 +228,58 @@ header {
     top: 50%;
     left: 5%;
 }
+
+/* Стили для блока "about-me" */
+.about-me__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 90px 20px;
+    /*min30px max50px*/
+    padding: clamp(1.875rem, 0.982rem + 2.381vw, 3.125rem);
+    text-align: center;
+    /*min 40px max60px*/
+    gap: clamp(2.5rem, 1.607rem + 2.381vw, 3.75rem);
+}
+
+.about-me__item img {
+    /*min 180px max 420px*/
+    width: clamp(11.25rem, 0.536rem + 28.571vw, 26.25rem);
+}
+
+.about-me__h2 {
+    color: #FCCD04;
+    /*min 28px max 32px */
+    font-size: clamp(1.75rem, 1.571rem + 0.476vw, 2rem);
+}
+
+.about-me__text {
+    /*min 14px max 18px */
+    font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
+    color: black;
+    max-width: 600px;
+}
+
+.about-me__button {
+    /*min 14px max 18px */
+    font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
+    font-weight: 600;
+    color: white;
+    background-color: #FCCD04;
+    border: 1px solid #FCCD04;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 15px 10px;
+    /*min 160px max 350px*/
+    width: clamp(10rem, 1.518rem + 22.619vw, 21.875rem);
+    transition: 0.3s;
+}
+
+.about-me__button:hover {
+    transform: scale(1.1);
+}
+
+/* Стили для блока "about-me" */
 
 /* Стили для блока "Часто задаваемые вопросы" */
 .faq-container {
@@ -390,6 +442,7 @@ header {
         justify-items: center;
         align-content: center;
         gap: 40px;
+        margin: 20px 50px 20px;
     }
 
     .about-specialist__item {
@@ -410,5 +463,9 @@ header {
 
     .about-specialist__button {
         margin-top: 15px;
+    }
+
+    .about-me__container {
+        flex-direction: column;
     }
 }
