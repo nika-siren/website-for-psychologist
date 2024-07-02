@@ -281,6 +281,103 @@ header {
 
 /* Стили для блока "about-me" */
 
+/* Стили для блока "prices" */
+.prices__container {
+    margin: 20px 90px 20px;
+    /*min30px max50px*/
+    padding: clamp(1.875rem, 0.982rem + 2.381vw, 3.125rem);
+}
+
+.prices__h2 {
+    color: #A64AC9;
+    /*min 28px max 32px */
+    font-size: clamp(1.75rem, 1.571rem + 0.476vw, 2rem);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.prices__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /*min 40px max60px*/
+    gap: clamp(2.5rem, 1.607rem + 2.381vw, 3.75rem);
+}
+
+.prices__item {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #A64AC9;
+    border: 1px solid #A64AC9;
+    border-radius: 50px;
+
+    /*min 410px max512px*/
+    min-height: clamp(25.625rem, 21.071rem + 12.143vw, 32rem);
+    /*min20px max45px*/
+    padding: clamp(1.25rem, 0.134rem + 2.976vw, 2.813rem);
+    /*min 30px max70px*/
+    gap: clamp(1.875rem, 0.089rem + 4.762vw, 4.375rem);
+    justify-items: center;
+    align-items: center;
+}
+
+#prices__item-unique {
+    color: #A64AC9;
+    background-color: white;
+    border: 1px solid #A64AC9;
+}
+
+#prices__list-unique {
+    list-style-image: url(/assets/images/prices-star-2.png);
+}
+
+.prices__h3 {
+    /*min 14px max20px*/
+    font-size: clamp(0.875rem, 0.607rem + 0.714vw, 1.25rem);
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+.prices__list,
+.prices__button {
+    /*min 14px max 18px */
+    font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
+}
+
+.prices__list {
+    list-style-image: url(/assets/images/prices-star-1.png);
+    text-align: start;
+}
+
+.prices__button {
+    font-weight: 600;
+    color: white;
+    background-color: #FCCD04;
+    border: 1px solid #FCCD04;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 15px 10px;
+    /*min 160px max 350px*/
+    width: clamp(10rem, 1.518rem + 22.619vw, 21.875rem);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.prices__button:hover {
+    transform: scale(1.1);
+}
+
+
+.bolder {
+    font-weight: bold;
+}
+
+/* Стили для блока "prices" */
+
 /* Стили для блока "Часто задаваемые вопросы" */
 .faq-container {
     max-width: 100%;
