@@ -371,7 +371,6 @@ header {
     transform: scale(1.1);
 }
 
-
 .bolder {
     font-weight: bold;
 }
@@ -435,6 +434,118 @@ header {
 .faq-item:last-child {
     border-bottom: none;
 }
+
+/* Стили для блока "дипломы и сертификаты" */
+
+.diplomas__container {
+    /*min15px max70px*/
+    margin: clamp(0.938rem, -1.518rem + 6.548vw, 4.375rem) auto;
+}
+
+.diplomas__h2 {
+    color: #A64AC9;
+    /*min 28px max 32px */
+    font-size: clamp(1.75rem, 1.571rem + 0.476vw, 2rem);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.gallery {
+    width: 1350px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.gallery div {
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    /*min10px max20px*/
+    grid-gap: clamp(0.625rem, 0.179rem + 1.19vw, 1.25rem);
+    padding: 10px;
+    flex: none;
+}
+
+.gallery div img {
+    width: auto;
+    /*min220px max420px*/
+    max-height: clamp(13.75rem, -4.107rem + 47.619vw, 38.75rem);
+    transition: transform 0.5s;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+#backBtn,
+#nextBtn {
+    /*min50px max70px*/
+    width: clamp(3.125rem, 2.232rem + 2.381vw, 4.375rem);
+    cursor: pointer;
+    /*min10px max40px*/
+    margin: clamp(0.625rem, -0.714rem + 3.571vw, 2.5rem);
+}
+
+.gallery div img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* #gallery {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.photos {
+    display: flex;
+}
+
+#gallery .photos img {
+    display: none;
+
+    width: 300px;
+    border-radius: 7px;
+
+    margin-left: 1%;
+}
+
+#gallery .photos img:first-child {
+    display: block;
+
+    margin-left: 1%;
+}
+
+#gallery input {
+    border: none;
+
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.prev {
+    background: url(/assets/images/left-arrow.png);
+}
+
+.next {
+    background: url(/assets/images/right-arrow.png);
+}
+
+.buttons {
+    display: flex;
+}
+*/
+
+/* Стили для блока "дипломы и сертификаты" */
 
 /* Стили для футера */
 .footer-container {
