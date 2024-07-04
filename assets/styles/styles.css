@@ -48,6 +48,8 @@ header {
 
     /*min 14px max 18px */
     font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
+    text-decoration: none;
+    text-align: center;
     font-weight: 600;
     color: white;
     background-color: #FCCD04;
@@ -57,7 +59,7 @@ header {
     padding: 15px 10px;
     /*min 150px max 200px*/
     width: clamp(9.375rem, 7.143rem + 5.952vw, 12.5rem);
-    transition: 0.3s;
+    transition: transform 0.3s;
 }
 
 .header__button:hover {
@@ -79,8 +81,6 @@ header {
     /*min30px max50px*/
     padding: clamp(1.875rem, 0.982rem + 2.381vw, 3.125rem);
 
-    -webkit-box-shadow: 1px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 1px 4px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 2px 4px 8px 2px rgba(34, 60, 80, 0.2);
 }
 
@@ -112,14 +112,10 @@ header {
     list-style-image: url(/assets/images/star-marker.png);
 }
 
-.about-specialist__list-items {
-    display: flex;
-    flex-direction: row;
-}
-
 .about-specialist__button {
-    /*text-wrap: nowrap;*/
     font-weight: 600;
+    text-decoration: none;
+    text-align: center;
     color: white;
     background-color: #FCCD04;
     border: 1px solid #FCCD04;
@@ -128,11 +124,16 @@ header {
     padding: 15px 10px;
     /*min 160px max 350px*/
     width: clamp(10rem, 1.518rem + 22.619vw, 21.875rem);
-    transition: 0.3s;
+    transition: transform 0.3s;
 }
 
 .about-specialist__button:hover {
     transform: scale(1.1);
+}
+
+.about-specialist__item {
+    display: flex;
+    flex-direction: column;
 }
 
 .about-specialist__item img {
@@ -175,6 +176,7 @@ header {
     background-color: white;
     border: 2px solid #9b59b6;
     border-radius: 50px;
+    box-shadow: 2px 4px 8px 2px rgba(34, 60, 80, 0.2);
     /* Увеличено значение для более округленных краев */
     padding: 20px 40px;
     /* Увеличены отступы */
@@ -242,6 +244,12 @@ header {
     gap: clamp(2.5rem, 1.607rem + 2.381vw, 3.75rem);
 }
 
+.about-me__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .about-me__item img {
     /*min 180px max 420px*/
     width: clamp(11.25rem, 0.536rem + 28.571vw, 26.25rem);
@@ -263,6 +271,8 @@ header {
 .about-me__button {
     /*min 14px max 18px */
     font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
+    text-decoration: none;
+    text-align: center;
     font-weight: 600;
     color: white;
     background-color: #FCCD04;
@@ -272,7 +282,7 @@ header {
     padding: 15px 10px;
     /*min 160px max 350px*/
     width: clamp(10rem, 1.518rem + 22.619vw, 21.875rem);
-    transition: 0.3s;
+    transition: transform 0.3s;
 }
 
 .about-me__button:hover {
@@ -355,6 +365,7 @@ header {
 
 .prices__button {
     font-weight: 600;
+    text-decoration: none;
     color: white;
     background-color: #FCCD04;
     border: 1px solid #FCCD04;
@@ -555,6 +566,7 @@ header {
     padding: 40px 20px;
     background-color: #9b59b6;
     border-radius: 30px;
+    box-shadow: 2px 4px 8px 2px rgba(34, 60, 80, 0.2);
 }
 
 .footer-content {
