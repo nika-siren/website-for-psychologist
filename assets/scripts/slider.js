@@ -22,3 +22,20 @@ backBtn.addEventListener("click", () => {
     document.location = 'page/new.html'
 }
     */
+document.addEventListener('DOMContentLoaded', function() {
+    let faqToggle = document.getElementsByClassName('faq-toggle');
+    for (let i = 0; i < faqToggle.length; i++) {
+        faqToggle[i].addEventListener('click', function() {
+            this.classList.toggle('active');
+            let faqAnswer = this.parentElement.nextElementSibling;
+
+            if (faqAnswer.style.maxHeight) {
+                faqAnswer.style.maxHeight = null;
+                faqAnswer.style.paddingTop = 0;
+            } else {
+                faqAnswer.style.maxHeight = faqAnswer.scrollHeight + 'px';
+                faqAnswer.style.paddingTop = '25px';
+            }
+        });
+    }
+});
