@@ -18,14 +18,11 @@ backBtn.addEventListener("click", () => {
     scrollContainer.scrollLeft -= 400;
 })
 
-/*function signUp {
-    document.location = 'page/new.html'
-}
-    */
-document.addEventListener('DOMContentLoaded', function() {
+
+document.addEventListener('DOMContentLoaded', function () {
     let faqToggle = document.getElementsByClassName('faq-toggle');
     for (let i = 0; i < faqToggle.length; i++) {
-        faqToggle[i].addEventListener('click', function() {
+        faqToggle[i].addEventListener('click', function () {
             this.classList.toggle('active');
             let faqAnswer = this.parentElement.nextElementSibling;
 

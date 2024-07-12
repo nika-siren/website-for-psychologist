@@ -312,7 +312,7 @@ header {
     flex-wrap: wrap;
 
     /*min 40px max60px*/
-    gap: clamp(2.5rem, 1.607rem + 2.381vw, 3.75rem);
+    /*gap: clamp(2.5rem, 1.607rem + 2.381vw, 3.75rem);*/
 }
 
 .prices__item {
@@ -324,11 +324,13 @@ header {
     border-radius: 50px;
 
     /*min 410px max512px*/
-    min-height: clamp(25.625rem, 21.071rem + 12.143vw, 32rem);
+    min-height: 200px;
+    /*min220px max600px*/
+    min-width: clamp(13.75rem, -3.214rem + 45.238vw, 37.5rem);
     /*min20px max45px*/
     padding: clamp(1.25rem, 0.134rem + 2.976vw, 2.813rem);
-    /*min 30px max70px*/
-    gap: clamp(1.875rem, 0.089rem + 4.762vw, 4.375rem);
+    /*min 10px max40px*/
+    gap: clamp(0.625rem, -0.714rem + 3.571vw, 2.5rem);
     justify-items: center;
     align-items: center;
 }
@@ -372,8 +374,8 @@ header {
     border-radius: 50px;
     cursor: pointer;
     padding: 15px 10px;
-    /*min 160px max 350px*/
-    width: clamp(10rem, 1.518rem + 22.619vw, 21.875rem);
+    /*min 160px max 400px*/
+    width: clamp(10rem, -0.714rem + 28.571vw, 25rem);
     transition: 0.3s;
     text-align: center;
 }
@@ -390,47 +392,76 @@ header {
 
 /* Стили для блока "Часто задаваемые вопросы" */
 .faq {
+    /*min30px max70px*/
+    margin: 10px clamp(1.875rem, 0.089rem + 4.762vw, 4.375rem) 10px;
+    /*min30px max50px*/
+    padding: clamp(1.875rem, 0.982rem + 2.381vw, 3.125rem);
+    justify-content: center;
     max-width: 100%;
-    margin: auto;
-    padding: 20px;
+    /*margin: auto;
+    padding: 20px;*/
     box-sizing: border-box;
 }
 
 .faq-title {
+    /*min 28px max 32px */
+    font-size: clamp(1.75rem, 1.571rem + 0.476vw, 2rem);
     text-align: center;
     color: #9b59b6;
     margin-bottom: 20px;
 }
+
 .faq-toggle {
     background: none;
     border: none;
-    font-size: 28px;
+    /*min32px max48px*/
+    font-size: clamp(2rem, 1.286rem + 1.905vw, 3rem);
+    font-weight: normal;
     color: #9b59b6;
     cursor: pointer;
     outline: none;
 }
+
 .faq-item {
     border-top: 1px solid #9b59b6;
     padding: 20px 0;
 }
+
 .faq-item:first-of-type {
     border-top: none;
 }
+
 .faq-question {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
-    font-weight:500;
+    /*min 14px max20px*/
+    font-size: clamp(0.875rem, 0.607rem + 0.714vw, 1.25rem);
+    font-weight: 500;
     color: black;
 }
 
 .faq-answer {
+    /*min 14px max 18px */
+    font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
+    font-family: "Montserrat", sans-serif;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out, padding-top 0.3s ease-out;
     padding-top: 0;
 }
+
+.answer-a {
+    color: #FCCD04;
+    text-decoration: none;
+}
+
+.answer-a:visited {
+    color: #A64AC9;
+}
+
 .toggle-icon {
     font-size: 24px;
     color: #9b59b6;
@@ -450,6 +481,9 @@ header {
 .diplomas__container {
     /*min15px max70px*/
     margin: clamp(0.938rem, -1.518rem + 6.548vw, 4.375rem) auto;
+    /*min30px max50px*/
+    padding-left: clamp(1.875rem, 0.982rem + 2.381vw, 3.125rem);
+    padding-right: clamp(1.875rem, 0.982rem + 2.381vw, 3.125rem);
 }
 
 .diplomas__h2 {
@@ -559,11 +593,17 @@ header {
 
 /* Стили для футера */
 .footer-container {
+    /*min30px max70px*/
+    margin: 10px clamp(1.875rem, 0.089rem + 4.762vw, 4.375rem) 10px;
+    /*min30px max50px*/
+    padding: clamp(1.875rem, 0.982rem + 2.381vw, 3.125rem);
+    /*min200px max600px*/
+    min-width: clamp(12.5rem, -5.357rem + 47.619vw, 37.5rem);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
-    background-color: #9b59b6;
+    /*padding: 40px 20px;*/
+    background-color: #A64AC9;
     border-radius: 30px;
     box-shadow: 2px 4px 8px 2px rgba(34, 60, 80, 0.2);
 }
@@ -571,18 +611,23 @@ header {
 .footer-content {
     max-width: 800px;
     width: 100%;
-    background-color: #9b59b6;
+    background-color: #A64AC9;
     color: white;
-    padding: 40px;
+    /*padding: 40px;*/
     border-radius: 20px;
     box-sizing: border-box;
     text-align: center;
 }
 
-.footer-content p {
-    font-size: 24px;
+.footer-title {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    /*min 26px max 32px */
+    font-size: clamp(1.625rem, 1.357rem + 0.714vw, 2rem);
+    font-family: "Rounded Mplus 1c Bold";
     font-weight: 500;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 
 .contact-section {
@@ -594,30 +639,38 @@ header {
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    /*min10px max20px*/
+    gap: clamp(0.625rem, 0.179rem + 1.19vw, 1.25rem);
     margin-bottom: 30px;
     margin-top: 20px;
 }
 
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
 .contact-item a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /*min10px max30px*/
+    gap: clamp(0.625rem, -0.268rem + 2.381vw, 1.875rem);
     color: white;
-    font-size: 18px;
+    /*min 13px max 16px */
+    font-size: clamp(0.813rem, 0.679rem + 0.357vw, 1rem);
     text-decoration: none;
 }
 
 .contact-item img {
+    /*min30px max50px*/
+    height: clamp(1.875rem, 0.982rem + 2.381vw, 3.125rem);
+    /*width: auto;
     width: 24px;
-    height: 24px;
+    height: 24px;*/
 }
 
 /* Стили для навигации */
 .navigation-container {
+    display: flex;
+    justify-content: center;
     background-color: #f3f3f3;
     padding: 10px 20px;
     border-top: 1px solid #ccc;
@@ -629,12 +682,14 @@ header {
 }
 
 .navigation-container ul {
+    flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     margin: 10px;
     display: flex;
     justify-content: space-evenly;
-    gap: 20px;
+    /*min10px max20px*/
+    gap: clamp(0.625rem, 0.179rem + 1.19vw, 1.25rem);
 }
 
 .navigation-container li {
@@ -644,7 +699,8 @@ header {
 .navigation-container a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    /*min 13px max 16px */
+    font-size: clamp(0.813rem, 0.679rem + 0.357vw, 1rem);
 }
 
 /* Медиазапросы */
@@ -682,5 +738,20 @@ header {
 
     .about-me__container {
         flex-direction: column;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item a {
+        justify-content: center;
+    }
+
+    .navigation-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
