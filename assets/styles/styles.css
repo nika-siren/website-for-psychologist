@@ -389,9 +389,9 @@ header {
 /* Стили для блока "prices" */
 
 /* Стили для блока "Часто задаваемые вопросы" */
-.faq-container {
+.faq {
     max-width: 100%;
-    margin: 50px auto 0;
+    margin: auto;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -401,40 +401,39 @@ header {
     color: #9b59b6;
     margin-bottom: 20px;
 }
-
+.faq-toggle {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #9b59b6;
+    cursor: pointer;
+    outline: none;
+}
 .faq-item {
     border-top: 1px solid #9b59b6;
-    /* Тонкая фиолетовая линия */
-    padding: 15px 0;
+    padding: 20px 0;
 }
-
-.faq-item:first-child {
+.faq-item:first-of-type {
     border-top: none;
-    /* Убирает верхнюю линию у первого элемента */
 }
-
-.question {
+.faq-question {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     cursor: pointer;
-    font-size: 18px;
-    color: #333;
+    font-family: "Montserrat", sans-serif;
+    font-weight:500;
+    color: black;
 }
 
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding-top 0.3s ease-out;
+    padding-top: 0;
+}
 .toggle-icon {
     font-size: 24px;
     color: #9b59b6;
-}
-
-.answer {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #666;
-}
-
-.answer p {
-    margin: 0;
 }
 
 .faq-item:not(:last-child) {
