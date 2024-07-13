@@ -162,8 +162,9 @@ header {
 }
 
 .requests h2 {
-    font-size: 30px;
-    color: #333;
+    /*min 28px max 32px */
+    font-size: clamp(1.75rem, 1.571rem + 0.476vw, 2rem);
+    color: #393D3E;
     margin-bottom: 50px;
     position: absolute;
     top: 50%;
@@ -172,19 +173,28 @@ header {
 }
 
 .request-item {
+    display: flex;
     position: absolute;
     background-color: white;
-    border: 2px solid #9b59b6;
+    border: 2px solid #A64AC9;
     border-radius: 50px;
-    box-shadow: 2px 4px 8px 2px rgba(34, 60, 80, 0.2);
     /* Увеличено значение для более округленных краев */
-    padding: 20px 40px;
+
+    box-shadow: 2px 4px 8px 2px rgba(34, 60, 80, 0.2);
+
+    /*1min 10px 1max 20px*/
+    /*2min 20px 2max 40px*/
+    padding: clamp(0.625rem, 0.179rem + 1.19vw, 1.25rem) clamp(1.25rem, 0.357rem + 2.381vw, 2.5rem);
     /* Увеличены отступы */
-    font-size: 16px;
+    /*min 13px max 16px */
+    font-size: clamp(0.813rem, 0.679rem + 0.357vw, 1rem);
     /* Увеличен размер шрифта */
-    color: #9b59b6;
+
+    color: #A64AC9;
     white-space: nowrap;
     transition: transform 0.3s;
+
+    min-width: 10px;
 }
 
 .request-item:hover {
@@ -504,7 +514,7 @@ header {
 .gallery div {
     width: auto;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     /*min10px max20px*/
     grid-gap: clamp(0.625rem, 0.179rem + 1.19vw, 1.25rem);
     padding: 10px;
@@ -754,4 +764,35 @@ header {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/*медиазапросы requests*/
+
+@media screen and (max-width: 830px) {
+    .request-item {
+        white-space: normal;
+    }
+
+    .requests-container {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 630px) {
+
+
+
+    /*
+    .request-item,
+    .requests h2 {
+        position: inherit;
+    }
+        */
+
+    /*
+        .requests h2 {
+        margin-left: 53%;
+        margin-top: 25%;
+    }
+        */
 }
