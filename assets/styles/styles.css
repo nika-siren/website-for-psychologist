@@ -778,21 +778,37 @@ header {
     }
 }
 
-@media screen and (max-width: 630px) {
-
-
-
-    /*
-    .request-item,
+/*Медизапросы для блока Запросы */
+@media (max-width: 768px) {
+    .requests-container {
+        width: 100%;
+        padding: 20%;
+        text-align: center;
+    }
+    .requests {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .requests h2 {
-        position: inherit;
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: center !important;
+        width: 100%;
+        order: -1;
+        position: static;
     }
-        */
-
-    /*
-        .requests h2 {
-        margin-left: 53%;
-        margin-top: 25%;
+    .request-item {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        position: static;
     }
-        */
+    .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8 {
+        text-align: center;
+        top: auto;
+        left: auto;
+    }
 }
