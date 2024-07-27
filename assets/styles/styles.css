@@ -148,34 +148,24 @@ header {
 .requests-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    padding: 20px;
-    text-align: center;
-}
-
-.requests {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    /* top - right - bottom - left */
+    /*min 10px? 130px*/
+    margin: clamp(8.125rem, 12.589rem + -11.905vw, 1.875rem) 20px 50px 20px;
+    /*margin: 20px 90px 20px;*/
 }
 
 .requests h2 {
     /*min 28px max 32px */
     font-size: clamp(1.75rem, 1.571rem + 0.476vw, 2rem);
     color: #393D3E;
-    margin-bottom: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .request-item {
     display: flex;
-    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: white;
     border: 2px solid #A64AC9;
     border-radius: 50px;
@@ -192,54 +182,49 @@ header {
     /* Увеличен размер шрифта */
 
     color: #A64AC9;
-    white-space: nowrap;
+    white-space: normal;
     transition: transform 0.3s;
 
-    min-width: 10px;
+    width: auto;
+    /*min-width: 210px;*/
+    max-height: 15px;
 }
 
 .request-item:hover {
     transform: scale(1.1);
 }
 
-.item1 {
-    top: 35%;
-    left: 15%;
+.request-items-1,
+.request-items-2,
+.request-items-3,
+.request-items-4,
+.request-items-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.item2 {
-    top: 25%;
-    left: 40%;
+.request-items-2 {
+    /*min 15px max 500px*/
+    gap: clamp(0.938rem, -3.952rem + 39.113vw, 31.25rem);
+    padding-top: 10px;
 }
 
-.item3 {
-    top: 35%;
-    left: 70%;
+.request-items-3 {
+    /*min10px max130px*/
+    gap: clamp(0.625rem, -0.585rem + 9.677vw, 8.125rem);
+    /*min10px max50px*/
+    padding-top: clamp(0.625rem, 0.222rem + 3.226vw, 3.125rem);
+    padding-bottom: clamp(0.625rem, 0.222rem + 3.226vw, 3.125rem);
 }
 
-.item4 {
-    top: 50%;
-    left: 80%;
+.request-items-4 {
+    /*min 15px max 500px*/
+    gap: clamp(0.938rem, -3.952rem + 39.113vw, 31.25rem);
 }
 
-.item5 {
-    top: 65%;
-    left: 70%;
-}
-
-.item6 {
-    top: 75%;
-    left: 40%;
-}
-
-.item7 {
-    top: 65%;
-    left: 15%;
-}
-
-.item8 {
-    top: 50%;
-    left: 5%;
+.request-items-5 {
+    padding-top: 10px;
 }
 
 /* Стили для блока "about-me" */
@@ -643,24 +628,37 @@ header {
 
 .contact-section {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    /*min10px max300px*/
+    gap: clamp(0.625rem, -22.031rem + 45.313vw, 18.75rem);
 }
 
 .contact-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    /*min10px max20px*/
-    gap: clamp(0.625rem, 0.179rem + 1.19vw, 1.25rem);
+    align-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*min10px max30px*/
+    gap: clamp(0.625rem, 0.423rem + 1.613vw, 1.875rem);
     margin-bottom: 30px;
     margin-top: 20px;
 }
 
+.contact-items-1,
+.contact-items-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .contact-item a {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: start;
+    flex-wrap: nowrap;
     align-items: center;
     /*min10px max30px*/
     gap: clamp(0.625rem, -0.268rem + 2.381vw, 1.875rem);
@@ -676,6 +674,11 @@ header {
     /*width: auto;
     width: 24px;
     height: 24px;*/
+}
+
+.note-social {
+    /*min 13px max 16px */
+    font-size: clamp(0.813rem, 0.679rem + 0.357vw, 1rem);
 }
 
 /* Стили для навигации */
@@ -769,58 +772,18 @@ header {
 
 /*медиазапросы requests*/
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 630px) {
     .request-item {
         white-space: normal;
+        max-height: 70px;
+        min-width: 70px;
     }
 
     .requests-container {
         width: 60vw;
     }
-}
 
-/*Медизапросы для блока Запросы */
-@media (max-width: 768px) {
-    .requests-container {
-        width: 100%;
-        padding: 20%;
-        text-align: center;
-    }
-
-    .requests {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .requests h2 {
-        margin-top: 0;
-        margin-bottom: 20px;
-        text-align: center !important;
-        width: 100%;
-        order: -1;
-        position: static;
-    }
-
-    .request-item {
-        position: static;
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        text-align: center;
-        position: static;
-    }
-
-    .item1,
-    .item2,
-    .item3,
-    .item4,
-    .item5,
-    .item6,
-    .item7,
-    .item8 {
-        text-align: center;
-        top: auto;
-        left: auto;
+    .contact-info {
+        flex-wrap: wrap;
     }
 }
