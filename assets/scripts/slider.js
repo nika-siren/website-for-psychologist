@@ -1,3 +1,5 @@
+/* diplomas slider */
+
 let scrollContainer = document.querySelector(".gallery");
 let backBtn = document.getElementById("backBtn");
 let nextBtn = document.getElementById("nextBtn");
@@ -18,7 +20,7 @@ backBtn.addEventListener("click", () => {
     scrollContainer.scrollLeft -= 450;
 })
 
-
+/* faq animation */
 document.addEventListener('DOMContentLoaded', function () {
     let faqToggle = document.getElementsByClassName('faq-toggle');
     for (let i = 0; i < faqToggle.length; i++) {
