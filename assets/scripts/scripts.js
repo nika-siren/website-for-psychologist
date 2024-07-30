@@ -21,12 +21,13 @@ backBtn.addEventListener("click", () => {
 })
 
 /* faq animation */
+
 document.addEventListener('DOMContentLoaded', function () {
-    let faqToggle = document.getElementsByClassName('faq-toggle');
-    for (let i = 0; i < faqToggle.length; i++) {
-        faqToggle[i].addEventListener('click', function () {
+    let faqItems = document.getElementsByClassName('faq-item');
+    for (let j = 0; j < faqItems.length; j++) {
+        faqItems[j].addEventListener('click', function () {
             this.classList.toggle('active');
-            let faqAnswer = this.parentElement.nextElementSibling;
+            let faqAnswer = this.querySelector('.faq-answer');
 
             if (faqAnswer.style.maxHeight) {
                 faqAnswer.style.maxHeight = null;
@@ -36,8 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 faqAnswer.style.paddingTop = '25px';
             }
         });
-    }
-});
+    };
+})
+
 
 /* smooth scroll */
 
