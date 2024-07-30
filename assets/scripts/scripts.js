@@ -21,12 +21,13 @@ backBtn.addEventListener("click", () => {
 })
 
 /* faq animation */
+
 document.addEventListener('DOMContentLoaded', function () {
-    let faqToggle = document.getElementsByClassName('faq-toggle');
-    for (let i = 0; i < faqToggle.length; i++) {
-        faqToggle[i].addEventListener('click', function () {
+    let faqItems = document.getElementsByClassName('faq-item');
+    for (let j = 0; j < faqItems.length; j++) {
+        faqItems[j].addEventListener('click', function () {
             this.classList.toggle('active');
-            let faqAnswer = this.parentElement.nextElementSibling;
+            let faqAnswer = this.querySelector('.faq-answer');
 
             if (faqAnswer.style.maxHeight) {
                 faqAnswer.style.maxHeight = null;
@@ -36,5 +37,29 @@ document.addEventListener('DOMContentLoaded', function () {
                 faqAnswer.style.paddingTop = '25px';
             }
         });
-    }
-});
+    };
+})
+
+
+/* smooth scroll */
+
+window.addEventListener("DOMContentLoaded", () => {
+    const smoothScroll = () => {
+        const links = document.querySelectorAll(".menu-link");
+
+        links.forEach((link) => {
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+                const section = document.querySelector(link.getAttribute("href"));
+
+                section.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                    inline: "center",
+                });
+            });
+        });
+    };
+
+    smoothScroll();
+})
