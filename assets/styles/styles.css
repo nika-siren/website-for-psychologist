@@ -91,8 +91,8 @@ h2 {
         border: 2px solid #A64AC9;
         box-shadow: 2px 4px 8px 2px rgba(34, 60, 80, 0.2);
 
-        /*min 24px max 28px */
-        font-size: 20px;
+        /*min 20px max 28px */
+        font-size: clamp(1.25rem, 1.11rem + 1.124vw, 1.75rem);
         text-decoration: none;
         text-align: center;
         font-weight: 600;
@@ -100,8 +100,8 @@ h2 {
         border-radius: 50px;
         cursor: pointer;
         padding: 20px 15px;
-        /*min 200px max 300px*/
-        width: 170px;
+        /*min 170px max 300px*/
+        width: clamp(10.625rem, 8.343rem + 18.258vw, 18.75rem);
         transition: transform 0.3s;
     }
 
@@ -122,12 +122,8 @@ h2 {
         border-radius: 50px;
         box-shadow: 2px 4px 8px 2px rgba(34, 60, 80, 0.2);
 
-        /*1min 10px 1max 20px*/
-        /*2min 20px 2max 40px*/
-        padding: clamp(0.625rem, 0.179rem + 1.19vw, 1.25rem) clamp(1.25rem, 0.357rem + 2.381vw, 2.5rem);
-        /* Увеличены отступы */
-        /*min 24px max 28px */
-        font-size: 20px;
+        /*min 20px max 28px */
+        font-size: clamp(1.25rem, 1.11rem + 1.124vw, 1.75rem);
         /* Увеличен размер шрифта */
 
         color: #A64AC9;
@@ -137,8 +133,8 @@ h2 {
         /*min15px max35px*/
         max-height: clamp(0.938rem, 0.586rem + 2.809vw, 2.188rem);
         padding: 20px 15px;
-        /*min 200px max 300px*/
-        width: 170px;
+        /*min 170px max 300px*/
+        width: clamp(10.625rem, 8.343rem + 18.258vw, 18.75rem);
         transition: transform 0.3s;
     }
 
