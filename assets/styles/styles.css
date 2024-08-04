@@ -111,8 +111,6 @@ h2 {
 
     .mobile-header__item {
         text-decoration: none;
-
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -271,9 +269,9 @@ header {
     display: flex;
     justify-content: center;
     /* top - right - bottom - left */
-    /*min 10px? 130px*/
-    margin: clamp(8.125rem, 12.589rem + -11.905vw, 1.875rem) 20px 50px 20px;
-    /*margin: 20px 90px 20px;*/
+    /*min 50px 130px*/
+    margin: clamp(3.125rem, -5.511rem + 15.152vw, 8.125rem) 20px clamp(0.625rem, 0.222rem + 3.226vw, 3.125rem) 20px;
+    /*margin-btm min10px max50px*/
 }
 
 .requests h2 {
@@ -354,7 +352,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 20px 90px 20px;
+    margin: 20px 90px clamp(0.313rem, 0.066rem + 1.316vw, 1.25rem);
     /*min30px max50px*/
     padding: clamp(1.875rem, 0.982rem + 2.381vw, 3.125rem);
     text-align: center;
@@ -411,7 +409,8 @@ header {
 
 /* Стили для блока "prices" */
 .prices__container {
-    margin: 20px 90px 20px;
+    /*margin-top & margin-btm min5px max20px*/
+    margin: clamp(0.313rem, 0.066rem + 1.316vw, 1.25rem) 90px clamp(0.313rem, 0.066rem + 1.316vw, 1.25rem);
     /*min30px max50px*/
     padding: clamp(1.875rem, 0.982rem + 2.381vw, 3.125rem);
 }
@@ -919,5 +918,12 @@ header {
 
     .contact-info {
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .requests-container {
+        /*min10px max45px*/
+        margin-top: clamp(0.625rem, 0.011rem + 4.916vw, 2.813rem);
     }
 }
