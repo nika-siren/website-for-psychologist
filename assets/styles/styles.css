@@ -6,142 +6,23 @@
     font-weight: bold;
 }
 
-@font-face {
-    src: url(/assets/styles/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
-    font-family: 'Quicksand';
-}
-
 /* Общие стили */
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    /*font-family: "Quicksand";*/
-    /* 'Arial' */
 }
 
 h2 {
     font-family: "Rounded Mplus 1c Bold";
 }
 
-/* mobile header start */
+/* Стили для блока "mobile header" */
 .hamburger,
 .nav-menu,
 .bar {
     display: none;
     cursor: pointer;
 }
-
-@media screen and (max-width: 912px) {
-
-    .hamburger {
-        display: block;
-        position: fixed;
-        right: 10px;
-        top: 10px;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        background-color: #A64AC9;
-    }
-
-    .nav-menu {
-        display: flex;
-        position: fixed;
-
-        left: -100%;
-        top: 0;
-        gap: 10px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: white;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .nav-menu.active {
-        left: -10px;
-        padding: 20px;
-
-    }
-
-    /*остальной код btn в header*/
-    .mobile-header__button {
-        background-color: #A64AC9;
-        border: 2px solid #A64AC9;
-        box-shadow: 2px 4px 8px 2px rgba(34, 60, 80, 0.2);
-
-        /*min 20px max 28px */
-        font-size: clamp(1.25rem, 1.11rem + 1.124vw, 1.75rem);
-        text-decoration: none;
-        text-align: center;
-        font-weight: 600;
-        color: white;
-        border-radius: 50px;
-        cursor: pointer;
-        padding: 20px 15px;
-        /*min 170px max 300px*/
-        width: clamp(10.625rem, 8.343rem + 18.258vw, 18.75rem);
-        transition: transform 0.3s;
-    }
-
-    .mobile-header__button:hover {
-        transform: scale(1.1);
-    }
-
-    .mobile-header__item {
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-color: white;
-        border: 2px solid #A64AC9;
-        border-radius: 50px;
-        box-shadow: 2px 4px 8px 2px rgba(34, 60, 80, 0.2);
-
-        /*min 20px max 28px */
-        font-size: clamp(1.25rem, 1.11rem + 1.124vw, 1.75rem);
-        /* Увеличен размер шрифта */
-
-        color: #A64AC9;
-        white-space: normal;
-        transition: transform 0.3s;
-
-        /*min15px max35px*/
-        max-height: clamp(0.938rem, 0.586rem + 2.809vw, 2.188rem);
-        padding: 20px 15px;
-        /*min 170px max 300px*/
-        width: clamp(10.625rem, 8.343rem + 18.258vw, 18.75rem);
-        transition: transform 0.3s;
-    }
-
-    .mobile-header__item:hover {
-        transform: scale(1.1);
-    }
-}
-
-/* mobile header end */
 
 /* Стили для блока "Header" */
 header {
@@ -794,6 +675,116 @@ header {
 
 /* Медиазапросы */
 
+@media screen and (max-width: 912px) {
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #A64AC9;
+    }
+
+    .nav-menu {
+        display: flex;
+        position: fixed;
+
+        left: -100%;
+        top: 0;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        left: -10px;
+        padding: 20px;
+
+    }
+
+    /*остальной код btn в header?*/
+    .mobile-header__button {
+        background-color: #A64AC9;
+        border: 2px solid #A64AC9;
+        box-shadow: 2px 4px 8px 2px rgba(34, 60, 80, 0.2);
+
+        /*min 20px max 28px */
+        font-size: clamp(1.25rem, 1.11rem + 1.124vw, 1.75rem);
+        text-decoration: none;
+        text-align: center;
+        font-weight: 600;
+        color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        padding: 20px 15px;
+        /*min 170px max 300px*/
+        width: clamp(10.625rem, 8.343rem + 18.258vw, 18.75rem);
+        transition: transform 0.3s;
+    }
+
+    .mobile-header__button:hover {
+        transform: scale(1.1);
+    }
+
+    .mobile-header__item {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        border: 2px solid #A64AC9;
+        border-radius: 50px;
+        box-shadow: 2px 4px 8px 2px rgba(34, 60, 80, 0.2);
+
+        /*min 20px max 28px */
+        font-size: clamp(1.25rem, 1.11rem + 1.124vw, 1.75rem);
+        /* Увеличен размер шрифта */
+
+        color: #A64AC9;
+        white-space: normal;
+        transition: transform 0.3s;
+
+        /*min15px max35px*/
+        max-height: clamp(0.938rem, 0.586rem + 2.809vw, 2.188rem);
+        padding: 20px 15px;
+        /*min 170px max 300px*/
+        width: clamp(10.625rem, 8.343rem + 18.258vw, 18.75rem);
+        transition: transform 0.3s;
+    }
+
+    .mobile-header__item:hover {
+        transform: scale(1.1);
+    }
+}
+
 @media screen and (max-width: 830px) {
     .about-specialist__container {
         flex-direction: column;
@@ -845,7 +836,7 @@ header {
     }
 }
 
-/*медиазапросы requests*/
+/*медиазапросы REQUESTS ONLY*/
 
 @media screen and (max-width: 1024px) {
 
