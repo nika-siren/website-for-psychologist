@@ -339,10 +339,6 @@ header {
     border: 1px solid #A64AC9;
 }
 
-#prices__list-unique {
-    list-style-image: url(/assets/images/prices-star-2.png);
-}
-
 .prices__h3 {
     /*min 14px max20px*/
     font-size: clamp(0.875rem, 0.607rem + 0.714vw, 1.25rem);
@@ -359,7 +355,7 @@ header {
 }
 
 .prices__list {
-    list-style-image: url(/assets/images/prices-star-1.png);
+    list-style-image: url("../images/prices-star-1.png");
     text-align: start;
 }
 
