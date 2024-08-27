@@ -1,7 +1,7 @@
 /* Подключение шрифта Rounded Mplus 1c Bold */
 
 @font-face {
-    src: url(/assets/styles/fonts/RoundedMplus1c/MPLUSRounded1c-Bold.ttf);
+    src: url(./assets/styles/fonts/RoundedMplus1c/MPLUSRounded1c-Bold.ttf);
     font-family: 'Rounded Mplus 1c Bold';
     font-weight: bold;
 }
