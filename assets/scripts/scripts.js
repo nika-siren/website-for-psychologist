@@ -6,12 +6,12 @@ const navMenu = document.querySelector(".nav-menu");
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
-})
+});
 
 document.querySelectorAll(".mobile-header__item").forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-}))
+}));
 
 
 /* diplomas slider */
@@ -24,17 +24,17 @@ scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     scrollContainer.scrollLeft += evt.deltaY;
     scrollContainer.style.scrollBehavior = "auto";
-})
+});
 
 nextBtn.addEventListener("click", () => {
     scrollContainer.style.scrollBehavior = "smooth";
     scrollContainer.scrollLeft += 450;
-})
+});
 
 backBtn.addEventListener("click", () => {
     scrollContainer.style.scrollBehavior = "smooth";
     scrollContainer.scrollLeft -= 450;
-})
+});
 
 /* faq animation */
 
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     };
-})
+});
 
 
 /* smooth scroll */
@@ -78,4 +78,4 @@ window.addEventListener("DOMContentLoaded", () => {
     };
 
     smoothScroll();
-})
+});
