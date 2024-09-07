@@ -1,7 +1,7 @@
 /* Подключение шрифта Rounded Mplus 1c Bold */
 
 @font-face {
-    src: url(/assets/styles/fonts/RoundedMplus1c/MPLUSRounded1c-Bold.ttf);
+    src: url("../fonts/RoundedMplus1c/MPLUSRounded1c-Bold.ttf") format("truetype");
     font-family: 'Rounded Mplus 1c Bold';
     font-weight: bold;
 }
@@ -53,8 +53,8 @@ header {
     text-align: center;
     font-weight: 600;
     color: white;
-    background-color: #FCCD04;
-    border: 1px solid #FCCD04;
+    background-color: #A64AC9;
+    border: 1px solid #A64AC9;
     border-radius: 50px;
     cursor: pointer;
     padding: 15px 10px;
@@ -110,7 +110,7 @@ header {
     font-size: clamp(0.875rem, 0.071rem + 2.143vw, 2rem);
     text-transform: uppercase;
     color: #393D3E;
-    list-style-image: url(/assets/images/star-marker.png);
+    list-style-image: url("../images/star-marker.png");
 }
 
 .about-specialist__button {
@@ -118,8 +118,8 @@ header {
     text-decoration: none;
     text-align: center;
     color: white;
-    background-color: #FCCD04;
-    border: 1px solid #FCCD04;
+    background-color: #A64AC9;
+    border: 1px solid #A64AC9;
     border-radius: 50px;
     cursor: pointer;
     padding: 15px 10px;
@@ -339,10 +339,6 @@ header {
     border: 1px solid #A64AC9;
 }
 
-#prices__list-unique {
-    list-style-image: url(/assets/images/prices-star-2.png);
-}
-
 .prices__h3 {
     /*min 14px max20px*/
     font-size: clamp(0.875rem, 0.607rem + 0.714vw, 1.25rem);
@@ -359,7 +355,7 @@ header {
 }
 
 .prices__list {
-    list-style-image: url(/assets/images/prices-star-1.png);
+    list-style-image: url("../images/prices-star-1.png");
     text-align: start;
 }
 
