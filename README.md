@@ -8,7 +8,7 @@
 
 ## Основные технологии
 
-<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="HTML" alt="HTML" width="100" height="100"/>&nbsp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JS" alt="JS" width="100" height="100"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original-wordmark.svg" title="HTML" alt="HTML" width="100" height="100"/>&nbsp;
 
 ---
@@ -37,5 +37,5 @@ git clone https://github.com/nika-siren/website-for-psychologist.git
 
 ## Команда разработчиков :computer:
  
-[Ника](https://github.com/nika-siren)
+[Ника](https://github.com/nika-siren) и 
 [Гульназ](https://github.com/hbtch)
