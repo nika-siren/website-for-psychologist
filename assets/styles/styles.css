@@ -158,7 +158,7 @@ header {
 .requests h2 {
     /*min 28px max 32px */
     font-size: clamp(1.75rem, 1.571rem + 0.476vw, 2rem);
-    color: #393D3E;
+    color: #A64AC9;
     text-align: center;
 }
 
@@ -167,7 +167,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: white;
+    background-color: #A64AC9;
     border: 2px solid #A64AC9;
     border-radius: 50px;
     /* Увеличено значение для более округленных краев */
@@ -182,7 +182,7 @@ header {
     font-size: clamp(0.813rem, 0.679rem + 0.357vw, 1rem);
     /* Увеличен размер шрифта */
 
-    color: #A64AC9;
+    color: white;
     white-space: normal;
     transition: transform 0.3s;
 
