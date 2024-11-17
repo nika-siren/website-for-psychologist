@@ -46,3 +46,8 @@ git clone https://github.com/nika-siren/website-for-psychologist.git
 [Ника](https://github.com/nika-siren) и 
 [Гульназ](https://github.com/hbtch)
 
+---
+
+## Дизайн
+
+[Адиля](https://t.me/dilya_v21)
