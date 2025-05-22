@@ -155,7 +155,8 @@ header {
     /*margin-btm min10px max50px*/
 }
 
-.requests h2 {
+.requests h2,
+.requests--mobile h2 {
     /*min 28px max 32px */
     font-size: clamp(1.75rem, 1.571rem + 0.476vw, 2rem);
     color: #A64AC9;
@@ -199,33 +200,60 @@ header {
 .request-items-2,
 .request-items-3,
 .request-items-4,
-.request-items-5 {
+.request-items-5,
+.request-items-6,
+.request-items-7 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.request-items-6 {
+    /*min 15px max 500px*/
+    gap: 350px;
+    /*min10px max50px*/
+    padding-top: 10px;
+    padding-right: 35px;
+    /* padding-top: 10px; */
+}
+
+.request-items-7 {
+    /*min 15px max 500px*/
+    gap: 250px;
+    /*min10px max50px*/
+    padding-top: 25px;
+    padding-right: 100px;
+    /* padding-top: 10px; */
+}
+
 .request-items-2 {
     /*min 15px max 500px*/
-    gap: clamp(0.938rem, -3.952rem + 39.113vw, 31.25rem);
-    padding-top: 10px;
+    gap: 600px;
+    /*min10px max50px*/
+    padding-top: 25px;
+    /* padding-top: 10px; */
 }
 
 .request-items-3 {
     /*min10px max130px*/
     gap: clamp(0.625rem, -0.585rem + 9.677vw, 8.125rem);
     /*min10px max50px*/
-    padding-top: clamp(0.625rem, 0.222rem + 3.226vw, 3.125rem);
-    padding-bottom: clamp(0.625rem, 0.222rem + 3.226vw, 3.125rem);
+    padding-top: 10px;
+    /* padding-bottom: clamp(0.625rem, 0.222rem + 3.226vw, 3.125rem); */
 }
 
 .request-items-4 {
     /*min 15px max 500px*/
-    gap: clamp(0.938rem, -3.952rem + 39.113vw, 31.25rem);
+    gap: 600px;
+    padding-top: 10px;
 }
 
 .request-items-5 {
-    padding-top: 10px;
+    padding-top: 20px;
+}
+
+.item11 {
+    margin-right: 100px;
 }
 
 /* Стили для блока "about-me" */
@@ -882,61 +910,30 @@ header {
 
 /*медиазапросы REQUESTS ONLY*/
 
-@media screen and (max-width: 1024px) {
+@media (min-width: 1280px) {
+    .requests-container--mobile {
+        display: none;
+    }
+}
 
-    .requests {
+@media (max-width: 1280px) {
+
+    .requests-container {
+        display: none;
+    }
+
+    .requests--mobile {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
 
-    .request-items-1,
-    .request-items-2,
-    .request-items-3,
-    .request-items-4,
-    .request-items-5 {
+    .request-items--mobile {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 10px;
-    }
-
-    .request-items-2,
-    .request-items-3,
-    .request-items-4,
-    .request-items-5 {
-        padding-top: 0;
-    }
-
-    .request-items-3 {
-        padding-bottom: 0;
-    }
-
-    .item8 {
-        order: 1;
-    }
-
-    .item1 {
-        order: 10;
-    }
-
-
-    .request-items-3 {
-        order: 4;
-    }
-
-    .request-items-2 {
-        order: 8;
-    }
-
-    .request-items-1 {
-        order: 6;
-    }
-
-    .request-items-4 {
-        order: 7;
-    }
-
-    .request-items-5 {
-        order: 5;
     }
 
     .request-item {
@@ -950,10 +947,14 @@ header {
         /*min 12px max32px*/
         padding: clamp(0.75rem, 0.447rem + 2.427vw, 2rem);
     }
+
+    .item11 {
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 912px) {
-    .requests-container {
+    .requests-container--mobile {
         /*min10px max45px*/
         margin-top: clamp(0.625rem, 0.011rem + 4.916vw, 2.813rem);
     }
