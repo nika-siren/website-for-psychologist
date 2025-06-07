@@ -916,7 +916,7 @@ header {
     }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
 
     .requests-container {
         display: none;
